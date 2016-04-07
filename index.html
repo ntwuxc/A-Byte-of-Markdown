@@ -1,25 +1,37 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>A byte of markdown by yulongjun</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">A byte of markdown</h1>
-      <h2 class="project-tagline">Markdown简明教程----于龙君</h2>
-      <a href="https://github.com/yulongjun/A-Byte-of-Markdown" class="btn">View on GitHub</a>
-      <a href="https://github.com/yulongjun/A-Byte-of-Markdown/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/yulongjun/A-Byte-of-Markdown/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+<html>
 
-    <section class="main-content">
-      <h1>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="A byte of markdown : Markdown简明教程----于龙君">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>A byte of markdown</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/yulongjun/A-Byte-of-Markdown">View on GitHub</a>
+
+          <h1 id="project_title">A byte of markdown</h1>
+          <h2 id="project_tagline">Markdown简明教程----于龙君</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/yulongjun/A-Byte-of-Markdown/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/yulongjun/A-Byte-of-Markdown/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
 <a id="markdown是什么" class="anchor" href="#markdown%E6%98%AF%E4%BB%80%E4%B9%88" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Markdown是什么？</h1>
 
 <p>Markdown是web上的一种格式文本。Markdown功能强大，我们可以使用Markdown控制文档的显示、把文字格式为粗体或斜体、添加图像、创建列表等等。特别值得一提的是，Markdown编写只需普通文字与一些非字母字符，比如<code>#</code>或<code>*</code>，易于学习与掌握。 </p>
@@ -215,6 +227,7 @@
 # -*- encoding: utf-8 -*-
 print('Hello,World!')
 print('Hello,Markdown')
+此处应该有“```”,但是整个页面格式会乱，就省略了，其实是前后都有三个“`”
 </code></pre>
 
 <h4>
@@ -255,10 +268,55 @@ print('Hello,Markdown')
 </ul>
 
 <h2>
-<a id="9-注脚" class="anchor" href="#9-%E6%B3%A8%E8%84%9A" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>9. 注脚</h2>
+<a id="8-表格" class="anchor" href="#8-%E8%A1%A8%E6%A0%BC" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>8. 表格</h2>
+
+<p>表格支持左对齐<code>:----</code>，右对齐<code>----:</code>，居中对齐 <code>:--:</code>，如果没有<code>:</code>，默认左对齐</p>
 
 <h4>
 <a id="代码-7" class="anchor" href="#%E4%BB%A3%E7%A0%81-7" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>代码</code>：</h4>
+
+<pre><code>| Item      |    Value | Qty  |
+| :-------- | --------:| :--: |
+| Computer  | 1600 USD |  5   |
+| Phone     |   12 USD |  12  |
+| Pipe      |    1 USD | 234  |
+</code></pre>
+
+<h4>
+<a id="代码的效果-7" class="anchor" href="#%E4%BB%A3%E7%A0%81%E7%9A%84%E6%95%88%E6%9E%9C-7" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>代码的效果</code>：</h4>
+
+<table>
+<thead>
+<tr>
+<th align="left">Item</th>
+<th align="right">Value</th>
+<th align="center">Qty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Computer</td>
+<td align="right">1600 USD</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="left">Phone</td>
+<td align="right">12 USD</td>
+<td align="center">12</td>
+</tr>
+<tr>
+<td align="left">Pipe</td>
+<td align="right">1 USD</td>
+<td align="center">234</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="9-注脚" class="anchor" href="#9-%E6%B3%A8%E8%84%9A" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>9. 注脚</h2>
+
+<h4>
+<a id="代码-8" class="anchor" href="#%E4%BB%A3%E7%A0%81-8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>代码</code>：</h4>
 
 <pre><code>这里是[^1]，这里是另一个注脚[^demo]
 
@@ -268,7 +326,7 @@ print('Hello,Markdown')
 </code></pre>
 
 <h4>
-<a id="代码的效果-7" class="anchor" href="#%E4%BB%A3%E7%A0%81%E7%9A%84%E6%95%88%E6%9E%9C-7" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>代码的效果</code>：</h4>
+<a id="代码的效果-8" class="anchor" href="#%E4%BB%A3%E7%A0%81%E7%9A%84%E6%95%88%E6%9E%9C-8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>代码的效果</code>：</h4>
 
 <p>（github不支持multimarkdown语法，这个注脚在很多软件都可以实现）</p>
 
@@ -276,13 +334,13 @@ print('Hello,Markdown')
 <a id="8-emoji表情" class="anchor" href="#8-emoji%E8%A1%A8%E6%83%85" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>8. emoji表情</h2>
 
 <h4>
-<a id="代码-8" class="anchor" href="#%E4%BB%A3%E7%A0%81-8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>代码</code>：</h4>
+<a id="代码-9" class="anchor" href="#%E4%BB%A3%E7%A0%81-9" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>代码</code>：</h4>
 
 <pre><code>我喜欢吃 :apple: ,我女朋友喜欢吃 :banana:。
 </code></pre>
 
 <h4>
-<a id="代码的效果-8" class="anchor" href="#%E4%BB%A3%E7%A0%81%E7%9A%84%E6%95%88%E6%9E%9C-8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>代码的效果</code>：</h4>
+<a id="代码的效果-9" class="anchor" href="#%E4%BB%A3%E7%A0%81%E7%9A%84%E6%95%88%E6%9E%9C-9" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>代码的效果</code>：</h4>
 
 <p>我喜欢吃 <img class="emoji" title=":apple:" alt=":apple:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f34e.png" height="20" width="20" align="absmiddle"> ,我女朋友喜欢吃 <img class="emoji" title=":banana:" alt=":banana:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f34c.png" height="20" width="20" align="absmiddle">。</p>
 
@@ -290,15 +348,18 @@ print('Hello,Markdown')
 <a id="结束语" class="anchor" href="#%E7%BB%93%E6%9D%9F%E8%AF%AD" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>结束语</h1>
 
 <p>希望大家帮忙修订下文档，指正错误和格式错误的地方，不胜感激！</p>
+      </section>
+    </div>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/yulongjun/A-Byte-of-Markdown">A byte of markdown</a> is maintained by <a href="https://github.com/yulongjun">yulongjun</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">A byte of markdown maintained by <a href="https://github.com/yulongjun">yulongjun</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
+    </div>
 
-    </section>
+    
 
-  
   </body>
 </html>
